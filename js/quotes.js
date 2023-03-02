@@ -56,18 +56,11 @@ const quotes = [
 ];
 const myQuotes = document.getElementById("quotes");
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("quote span:last-child");
+const quote = document.querySelector("#quotes span:first-child");
+const author = document.querySelector("#quotes span:last-child");
 
-/*
-Randomness 무작위성
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+console.log();
 
-1. Array 안에 있는 Element에 어떻게 접근하는가 
-2. 0~n 까지의 숫자를 지정해주는 function이 필요함
-3. Math module 사용
-   .random(); // 0부터 1 사이의 랜덤한 숫자를 제공
-   .round(); // 반올림
-   .ceil(); // 올림
-   .floor(); // 내림
-*/
-console.log(quotes[10 - 1]);
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
