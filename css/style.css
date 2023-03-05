@@ -1,3 +1,121 @@
+:root {
+  --alphaColor: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/* Main contents */
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.main-wrap div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-wrap i {
+  margin-right: 10px;
+}
+#clock {
+  font-size: 100px;
+}
+#login-form input {
+  width: 300px;
+  height: 60px;
+  background: var(--alphaColor);
+  border: 0;
+  color: white;
+  margin-right: 10px;
+  font-size: 32px;
+  text-align: center;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: white;
+  font-size: 26px;
+}
+input:focus {
+  border: none;
+  border-bottom: 2px solid goldenrod;
+}
+#login-form button {
+  width: 60px;
+  height: 60px;
+  text-transform: uppercase;
+
+  color: white;
+  border: 0.5px solid white;
+  border-radius: 5px;
+  background-color: var(--alphaColor);
+}
+#greeting {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* todo */
+#todo-form input {
+  width: 400px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  color: white;
+  text-align: center;
+}
+#todo-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#todo-list li {
+  margin: 5px 0;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#todo-list button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+/* Quotes */
+.quotes-wrap {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quotes-wrap span {
+  display: block;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 15px;
+}
+/* Weather */
+.weather-wrap {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
 .hidden {
   display: none;
 }
