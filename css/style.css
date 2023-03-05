@@ -75,6 +75,7 @@ input:focus {
   text-align: center;
 }
 #todo-list {
+  margin-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -82,7 +83,7 @@ input:focus {
   align-items: center;
 }
 #todo-list li {
-  margin: 5px 0;
+  margin: 10px 0;
   width: 60%;
   padding: 10px;
   border-radius: 10px;

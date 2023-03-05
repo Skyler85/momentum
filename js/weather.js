@@ -10,7 +10,7 @@ function onGeoOk(position) {
       const weather = document.querySelector("#weather span:first-child");
       const city = document.querySelector("#weather span:last-child");
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp} / ${date.weather.icon} `;
+      weather.innerText = `${data.weather[0].main} / ${data.main.temp} `;
     }); //실제 url에 방문하지 않고 url을 호출(개발자도구-네트워크 확인)
 }
 function onGeoError() {
